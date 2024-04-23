@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "637553575274",
+    "project_id": "spaceshiponline-aaa0c",
+    "storage_bucket": "spaceshiponline-aaa0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637553575274:android:6973a17aa97ca59dee9113",
+        "android_client_info": {
+          "package_name": "com.example.spaceshoot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACRuOus8KXIujbt7CAIFPO4bwXhzY61fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
