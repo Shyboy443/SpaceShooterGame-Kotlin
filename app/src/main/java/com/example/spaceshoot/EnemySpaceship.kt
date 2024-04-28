@@ -13,7 +13,7 @@ class EnemySpaceship(context: Context) {
     private val random: Random = Random()
 
     init {
-        enemySpaceship = BitmapFactory.decodeResource(context.resources, R.drawable.rocket2)
+        enemySpaceship = BitmapFactory.decodeResource(context.resources, R.drawable.human)
         ex = 200 + random.nextInt(400)
         enemyVelocity = 14 + random.nextInt(10)
     }

@@ -14,7 +14,7 @@ class OurSpaceship(context: Context) {
     private val random: Random = Random()
 
     init {
-        ourSpaceship = BitmapFactory.decodeResource(context.resources, R.drawable.rocket1);
+        ourSpaceship = BitmapFactory.decodeResource(context.resources, R.drawable.cat);
         ox = random.nextInt(SpaceShooter.screenWidth)
         oy = SpaceShooter.screenHeight - ourSpaceship!!.height
     }

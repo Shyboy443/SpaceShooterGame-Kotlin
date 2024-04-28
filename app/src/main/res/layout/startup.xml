@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/background1">
 
 
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="12dp"
             android:text="@string/play"
-            android:textColor="@color/secondary"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:onClick="startGame"/>
 

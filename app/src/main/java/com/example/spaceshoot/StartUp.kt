@@ -1,10 +1,8 @@
 package com.example.spaceshoot
-
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-
 class StartUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +18,4 @@ class StartUp : AppCompatActivity() {
         val intent = Intent(this, MatchHistory::class.java)
         startActivity(intent)
     }
-
-
 }

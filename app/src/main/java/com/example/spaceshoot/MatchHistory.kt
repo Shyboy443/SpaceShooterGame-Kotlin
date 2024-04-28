@@ -4,6 +4,7 @@ package com.example.spaceshoot
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -44,7 +45,15 @@ class MatchHistory : AppCompatActivity() {
         editor.remove("scores")
         editor.apply()
         adapter.updateScores(emptyList())
+        Toast.makeText(this, "Match history cleared!", Toast.LENGTH_SHORT).show()
+    }
 
+
+    fun resetHighScore(view: View) {
+        val editor = sharedPreferences.edit()
+        editor.putInt("highestScore", 0)  // Reset highest score to 0
+        editor.apply()
+        Toast.makeText(this, "Score Set to 0", Toast.LENGTH_SHORT).show()
     }
 
     fun goBack(view: View) {
