@@ -33,6 +33,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/textViewTitle"
         android:layout_above="@+id/btnClearHistory"
+        android:background="@drawable/gradiant"
         android:padding="16dp" />
 
     <Button

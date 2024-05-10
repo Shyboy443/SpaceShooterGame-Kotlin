@@ -484,11 +484,21 @@ class SpaceShooter(context: Context) : View(context) {
 
     private fun tryDroppingBomb() {
         val currentTime = System.currentTimeMillis()
-        if (currentTime - lastBombDropTime > bombDropInterval && Math.random() < bombDropChance && !paused && !gameOver) {
+        // Check if the enemy spaceship is on the screen
+        val enemyOnScreen = enemySpaceship!!.ex + enemySpaceship!!.getEnemySpaceshipWidth() > 0 &&
+                enemySpaceship!!.ex < screenWidth &&
+                enemySpaceship!!.ey + enemySpaceship!!.getEnemySpaceshipHeight() > 0 &&
+                enemySpaceship!!.ey < screenHeight
+
+        if (currentTime - lastBombDropTime > bombDropInterval &&
+            Math.random() < bombDropChance &&
+            !paused && !gameOver && enemyOnScreen) {
             dropBomb()
             lastBombDropTime = currentTime  // Reset the timer
         }
     }
+
+
 
     private fun checkCollisionWithBomb(bomb: Bomb): Boolean {
         val bombRect = Rect(bomb.bx, bomb.by, bomb.bx + bomb.getBomb().width, bomb.by + bomb.getBomb().height)

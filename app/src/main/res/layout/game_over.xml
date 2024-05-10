@@ -22,7 +22,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/exit"
+            android:background="@drawable/exitbtn"
             android:onClick="exit"/>
 
 
@@ -52,7 +52,14 @@
             android:textColor="#FFFFFF"
             android:layout_marginTop="50dp" />
 
-
+        <Button
+            android:id="@+id/buttonShare"
+            android:layout_width="51dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/baseline_share_24"
+            android:onClick="shareHighScore"
+            android:visibility="visible" />
     </LinearLayout>
     <ImageView
         android:id="@+id/paperView"
@@ -60,5 +67,8 @@
         android:layout_height="wrap_content"
         android:src="@drawable/play_big"
         android:visibility="invisible" />
+
+
+
 
 </LinearLayout>
